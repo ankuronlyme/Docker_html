@@ -1,4 +1,4 @@
-# Docker_html
+# Dockerizing a simple HTML page using Nginx as the web server.
 
 •	Create a plain HTML page named index.html with some content (e.g., "Hello, Docker!").
 •	Nginx Configuration (nginx.conf)
