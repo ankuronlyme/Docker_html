@@ -1,16 +1,15 @@
 # Dockerizing a simple HTML page using Nginx as the web server.
-
-•	Create a plain HTML page named index.html with some content (e.g., "Hello, Docker!").
-•	Nginx Configuration (nginx.conf)
-•	Create an Nginx configuration file named nginx.conf that serves the index.html page.
-•	Configure Nginx to listen on port 80.
-•	Create a Dockerfile to define the Docker image.
-•	Use an official Nginx base image.
-•	Copy the index.html and nginx.conf files into the appropriate location in the container.
-•	Ensure that the Nginx server is started when the container is run.
-•	Build the Docker image using the Dockerfile run command: 
-       docker build –t <your image name> . 
-                        -t is denotes for giving a tag.
+       • Create a plain HTML page named index.html with some content (e.g., "Hello, Docker!").
+       • Nginx Configuration (nginx.conf)
+       • Create an Nginx configuration file named nginx.conf that serves the index.html page.
+       • Configure Nginx to listen on port 80.
+       • Create a Dockerfile to define the Docker image.
+       • Use an official Nginx base image.
+       • Copy the index.html and nginx.conf files into the appropriate location in the container.
+       • Ensure that the Nginx server is started when the container is run.
+       • Build the Docker image using the Dockerfile run command: 
+        - docker build –t <your image name> . 
+                        - t is denotes for giving a tag.
                         - . is denotes  for giving the path
 •	After run this command build is successfully created 
 
