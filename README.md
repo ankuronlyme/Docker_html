@@ -1,22 +1,24 @@
 # Dockerizing a simple HTML page using Nginx as the web server.
-       • Create a plain HTML page named index.html with some content (e.g., "Hello, Docker!").
-       • Nginx Configuration (nginx.conf)
-       • Create an Nginx configuration file named nginx.conf that serves the index.html page.
-       • Configure Nginx to listen on port 80.
-       • Create a Dockerfile to define the Docker image.
-       • Use an official Nginx base image.
-       • Copy the index.html and nginx.conf files into the appropriate location in the container.
-       • Ensure that the Nginx server is started when the container is run.
-       • Build the Docker image using the Dockerfile run command: 
-        - docker build –t <your image name> . 
-                        - t is denotes for giving a tag.
-                        - . is denotes  for giving the path
+
+- Create a plain HTML page named index.html with some content (e.g., "Hello, Docker!").
+- Nginx Configuration (nginx.conf)
+- Create an Nginx configuration file named nginx.conf that serves the index.html page.
+- Configure Nginx to listen on port 80.
+- Create a Dockerfile to define the Docker image.
+- Use an official Nginx base image.
+- Copy the index.html and nginx.conf files into the appropriate location in the container.
+- Ensure that the Nginx server is started when the container is run.
+- Build the Docker image using the Dockerfile run command: 
+       - docker build –t <your image name> . 
+       - t is denotes for giving a tag.
+       - . is denotes  for giving the path
+  
 - After run this command build is successfully created 
 
 - Also check is image is created or not in desktop Docker run command : docker images
 
 - To run image into the container execute command: 
-      - docker run -it -p 80:80 -d <your – image- name>
+          - docker run -it -p 80:80 -d <your – image- name>
           - it denotes for to run in interwactive mode TTY
           - p denotes for ports
           - d denotes for detached mode (The Docker container running in the background).
@@ -38,15 +40,15 @@ Note*:-
 - Now you may facing an error in execution of the command, for resolving this issue we have to follow few steps:
     - Step: 1: Goto your .docker folder it is present in the c drive for my system the path is “C:\Users\pc\.docker” .
     - Step: 2: There is file with name “Config.json”, make a duplicate file of itv and name it “Configbackup.json”.
-    - Step : 3: We have to make some correction in the main file “Config.json”, there is a line "credsStore": "desktop",   remove this and save.
+    - Step: 3: We have to make some correction in the main file “Config.json”, there is a line "credsStore": "desktop",   remove this and save.
     - Step: 4 : Now go to your docker folder C:\Program Files\Docker\Docker\resources\bin, upto bin folder and rename a file “docker-credential-wincred” to “docker-credential-wincred.backup”. Just add.backup in the end and save it.
 
 -  Now again execute the first command again, and its running fine.
      -  Step 3: Run second command to build: 
      -  Step 4: Run third command:
  
-Make changes in the, if you want you can execute version.
-     - Step: 5: Run fourth command:
+- Make changes in the, if you want you can execute version.
+    - Step: 5: Run fourth command:
 
 If you have already pushed this image with the same name so its shows layer already exist: but in your case it will show the image pushing:
 
